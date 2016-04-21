@@ -37,5 +37,5 @@ jQuery(document).ready(function($) {
       $(this).parent().children('ul').slideToggle(250);
     });
   }
-
+ 
 });
