@@ -131,7 +131,7 @@
       <section id="post-content" role="main">
         <?php print $messages; ?>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <!--<?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>-->
         <?php print render($title_suffix); ?>
         <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
