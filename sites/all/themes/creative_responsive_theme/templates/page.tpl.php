@@ -79,12 +79,8 @@
     <?php endif; ?>
 
     <header id="header" role="banner">
-      <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+      <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" style="width:190px; height:80px"/></a></div>
       <?php endif; ?>
-      <h1 id="site-title">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-        <div id="site-description"><?php print $site_slogan; ?></div>
-      </h1>
       <div class="clear"></div>
     </header>
 
