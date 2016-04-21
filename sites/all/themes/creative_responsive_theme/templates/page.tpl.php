@@ -79,12 +79,12 @@
     <?php endif; ?>
 
     <header id="header" role="banner">
-      <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+      <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" style="width:180px; height:90px"/></a></div>
       <?php endif; ?>
-      <h1 id="site-title">
+      <!--<h1 id="site-title">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         <div id="site-description"><?php print $site_slogan; ?></div>
-      </h1>
+      </h1>-->
       <div class="clear"></div>
     </header>
 

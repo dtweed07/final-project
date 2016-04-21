@@ -1,0 +1,33 @@
+.view-front-page-slideshow .views-field-title {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  background-color: white;
+  opacity: 0.8;
+  width: 260px;
+  height: 30px;
+}
+
+.view-front-page-slideshow .views-field-counter { 
+  float: left; 
+  padding: 10px 5px; 
+  background: url("Slideshow_Off.png") top left no-repeat; 
+  background-size: 10px 10px;
+  width: 10px;
+}
+
+.view-front-page-slideshow .active .views-field-counter { 
+  background: url("Slideshow_On.png") top left no-repeat; 
+  background-size: 10px 10px;
+}
+
+.view-front-page-slideshow .views-content-counter { 
+  display: none;
+}
+
+.view-front-page-slideshow .views-slideshow-controls-bottom {
+  margin-left: 250px;
+}
