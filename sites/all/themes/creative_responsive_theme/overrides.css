@@ -42,9 +42,18 @@
   width: 200px;
 }
 
+.logout {
+  height: 35px;
+  margin-top: 5px;
+  float: right;
+}
+
+/*
 .views-field-title .field-content {
   display: none;
 }
+*/
+
 /*
 .views-field-body .field-content {
   margin-bottom: -30px;

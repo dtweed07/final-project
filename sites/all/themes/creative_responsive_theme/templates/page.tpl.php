@@ -97,6 +97,9 @@
           print drupal_render($main_menu_tree);
           ?>
         </div>
+        <div>
+          <input type="button" class="logout" value="Log Out" onclick="window.location.href='/user/logout'">
+        </div>
         <div class="clear"></div>
       </nav><!-- end main-menu -->
     </div>
