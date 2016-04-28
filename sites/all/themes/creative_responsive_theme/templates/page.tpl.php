@@ -88,7 +88,7 @@
       <nav id="main-menu"  role="navigation">
         <a class="nav-toggle" href="#">Navigation</a>
         <div class="menu-navigation-container">
-          <?php 
+          <?php
           if (module_exists('i18n')) {
             $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
           } else {
@@ -97,22 +97,23 @@
           print drupal_render($main_menu_tree);
           ?>
         </div>
-        <div>
-          <input type="button" class="logout" value="Log Out" onclick="window.location.href='/user/logout'">
+        <div class="nav-menu-right">
+          <?php // t() function means you can translate the string, if necessary ?>
+          <a class="button logout" href="user/logout" title="Log out" alt="Log out"><?php print t('Log out'); ?></a>
         </div>
         <div class="clear"></div>
       </nav><!-- end main-menu -->
     </div>
   </div>
 </div>
-  
+
   <div id="container">
 
     <?php if ($is_front): ?>
       <?php print render($page['slideshow']); ?>
        <!-- Banner -->
 
-       <?php if ($page['top_first'] || $page['top_second'] || $page['top_third']): ?> 
+       <?php if ($page['top_first'] || $page['top_second'] || $page['top_third']): ?>
         <div id="top-area" class="clearfix">
           <?php if ($page['top_first']): ?>
           <div class="column"><?php print render($page['top_first']); ?></div>
@@ -142,13 +143,13 @@
         <?php print render($page['content']); ?>
       </section> <!-- /#main -->
     </div>
-  
+
     <?php if ($page['sidebar_first']): ?>
       <aside id="sidebar-first" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-  
+
     </div>
 
     <?php if ($page['sidebar_second']): ?>
@@ -156,12 +157,12 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-  
+
 </div>
 
 <div id="footer">
   <div id="footer_wrapper">
-    <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?> 
+    <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
       <div id="footer-area" class="clearfix">
         <?php if ($page['footer_first']): ?>
         <div class="column"><?php print render($page['footer_first']); ?></div>
@@ -182,7 +183,7 @@
         <?php print render($page['footer']) ?>
       </div>
    <?php endif; ?>
-      
+
     <div id="copyright">
      <p class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <?php print $site_name; ?> </p> <p class="credits"> <?php print t('Theme by'); ?>  <a href="http://www.zymphonies.com">Zymphonies</a></p>
     <div class="clear"></div>
