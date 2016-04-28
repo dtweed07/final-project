@@ -97,10 +97,12 @@
           print drupal_render($main_menu_tree);
           ?>
         </div>
-        <div class="nav-menu-right">
-          <?php // t() function means you can translate the string, if necessary ?>
-          <a class="button logout" href="user/logout" title="Log out" alt="Log out"><?php print t('Log out'); ?></a>
-        </div>
+        <?php if (user_is_logged_in()): ?>
+          <div class="nav-menu-right">
+            <?php // t() function means you can translate the string, if necessary ?>
+            <a class="button logout" href="user/logout" title="Log out" alt="Log out"><?php print t('Log out'); ?></a>
+          </div>
+        <?php endif; ?>
         <div class="clear"></div>
       </nav><!-- end main-menu -->
     </div>
