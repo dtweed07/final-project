@@ -50,6 +50,9 @@
      element instead of using a floppy/unreliable float property which introduces
      other document/element flow issues */
   position: relative;
+  display: inline-block;
+  float: right;
+  width: auto;
 }
 
 /* This is why using IDs is a bad idea - it's hard to override using CSS classes */
