@@ -91,6 +91,9 @@ function creative_responsive_theme_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
+
+  // Add the current view mode to the classes
+  $variables['classes_array'][] = $variables['view_mode'];
 }
 
 function creative_responsive_theme_page_alter($page) {
